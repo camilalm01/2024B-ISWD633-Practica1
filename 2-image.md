@@ -60,6 +60,7 @@ docker inspect hello-world
 ```
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+
 "Id": "sha256:d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a"
 El algoritmo que usa es SHA-256
 
