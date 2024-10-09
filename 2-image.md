@@ -27,7 +27,8 @@ Descargar la imagen **hello-world**
 docker pull hello-world
 
 **¿Qué es nginx**
- Nginx es un servidor web de alto rendimiento y un servidor inverso que se utiliza para servir aplicaciones web y gestionar el tráfico de red. En Docker puede actuar como un contenedor que se encarga de la terminación de conexiones, la carga de balanceo y gestión de solicitudes entrantes a oros contenedores que ejecutan aplicaciones o servicios diferentes.
+
+Nginx es un servidor web de alto rendimiento y un servidor inverso que se utiliza para servir aplicaciones web y gestionar el tráfico de red. En Docker puede actuar como un contenedor que se encarga de la terminación de conexiones, la carga de balanceo y gestión de solicitudes entrantes a oros contenedores que ejecutan aplicaciones o servicios diferentes.
 
 Descargar la imagen  **nginx** en la versión **alpine**
 ```
