@@ -4,7 +4,7 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+La imagen contiene todo lo necesario para ejecutar una aplicacion, el contenedor es quien ejecuta esta imagen. A partir de una imagen puedo crear los contenedores que yo quiera.
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
 ## Comandos para imágenes
@@ -24,21 +24,23 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+docker pull hello-world
 
 **¿Qué es nginx**
-# COMPLETAR 
+ Nginx es un servidor web de alto rendimiento y un servidor inverso que se utiliza para servir aplicaciones web y gestionar el tráfico de red. En Docker puede actuar como un contenedor que se encarga de la terminación de conexiones, la carga de balanceo y gestión de solicitudes entrantes a oros contenedores que ejecutan aplicaciones o servicios diferentes.
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
-
+```
+docker pull nginx:alpine
+````
 ### Listar imágenes
 
 ```
 docker images
 ```
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+![image](https://github.com/user-attachments/assets/027959ae-3680-494e-9f0b-3636a11b8a06)
+
 
 **Identificadores**
 
@@ -53,10 +55,13 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-# COMPLETAR
+```
+docker inspect hello-world 
+```
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+"Id": "sha256:d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a"
+El algoritmo que usa es SHA-256
 
 ### Filtrar imágenes
 
@@ -73,7 +78,9 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
-# COMPLETAR
+```
+docker rmi hello-world
+```
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
